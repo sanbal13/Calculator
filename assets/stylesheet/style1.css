@@ -283,6 +283,7 @@ body {
 }
 hr {
     margin:0.2rem 0.5rem;
+    border-top: 1px solid #fff;
 }
 .circle {
     width: 3.5rem;
