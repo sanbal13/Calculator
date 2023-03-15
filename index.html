@@ -1,65 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Calculator using div</title>
+    <!-- Font Styles -->
+    <!-- Archivo Black -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <!-- Mansalva -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" 
+    rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/7f5cab6c93.js" crossorigin="anonymous"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/stylesheet/style.css">
+    <link rel="stylesheet" href="assets/stylesheet/style1.css">
 </head>
+
 <body>
-    <header>Calculator</header>
-    <main>
-        <div class="background-layer">
-        <div class="display">
-
-
-        </div>
-        <div class="keyboard-background">
-        <div class="keyboard-padding">
-        <div class="keypad flex">
-        <div class="numbers btn-group flex">
-            <div class="btn btn-num">7</div>
-            <div class="btn btn-num">8</div>
-            <div class="btn btn-num">9</div>
-            <div class="btn btn-num">4</div>
-            <div class="btn btn-num">5</div>
-            <div class="btn btn-num">6</div>
-            <div class="btn btn-num">1</div>
-            <div class="btn btn-num">2</div>
-            <div class="btn btn-num">3</div>
-            <div class="btn btn-num">0</div>
-            <div class="btn btn-num">00</div>
-            <div class="btn btn-num">.</div>
-        </div>
-        <div class="operations btn-group column-flex">
-            <div class="oper-subdiv-top btn-group flex">
-            <div class="btn btn-oper">percent</div>
-            <div class="btn btn-oper">sqrt</div>
-            <div class="btn btn-oper">multiply</div>
-            <div class="btn btn-oper">division</div>
-            </div>
-                <div class="oper-subdiv-bottom btn-group flex">
-                    <div class="left-oper-subdiv-bottom btn btn-oper big-btn">
-                        +
+    <header class="container padding header-main">
+        <h1 class="heading-header upper">Calculator using div's</h1>
+    </header>
+    <main class="container padding">
+        <div class="background">
+            <header class="calc-header">
+                <div class="flex">
+                    <div class="brand align-bottom">cello<small class="reg">&reg;</small></div>
+                    <div class="model align-center">CC-2341CW</div>
+                    <div class="solar align-top flex">
+                        <div class="panel"></div>
+                        <div class="panel"></div>
+                        <div class="panel"></div>
+                        <div class="panel no-right-border"></div>
                     </div>
-                    <div class="right-oper-subdiv-bottom btn-group column-flex">
-                        <div class="btn right-btn btn-oper">subtract</div>
-                        <div class="btn right-btn btn-oper">equal</div>
-                    </div>                    
+                    <div class="digits">
+                        <div class="number">1Z</div>
+                        <div class="upper word"> digits</div>
+                    </div>
+                </div>
+                <input type="text" class="text display">
+                <div class="about upper">120 steps check & correct </div>
+            </header>
+
+            <div class="button-section">
+                <div class="flex wrap button-pad">
+                    <!-- Row-1 -->
+                    <div class="flex-39 ">
+                        <div class="mode">
+                            <div>
+                                <span class="mode-option">F</span> 
+                                <span class="mode-option">UP</span> 
+                                <span class="mode-option">5/4</span>
+                            </div>
+                            <div>
+                                <span class="dot-option">.</span> 
+                                <span class="dot-option">.</span> 
+                                <span class="dot-option">.</span>
+                            </div>
+                        
+                    </div>
+                        <div class="toggle">                            
+                            <div class="toggle-btn">   
+                              <div class="toggle-notch">
+                                                                    
+                              </div>                        
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="flex-17 btn btn-oper yellow">
+                        Correct
+                        <div>
+                            00->0
+                        </div>                        
+                    </div>
+                    <div class="flex-17 btn btn-oper yellow">
+                        Auto Replay              
+
+                    </div>
+                    <div class="flex-17 btn btn-oper yellow">
+                        Check
+                        <div>
+                            <i class="fas fa-caret-down"></i>
+                        </div>                        
+                    </div>
+                    <!-- Row-2 -->
+                    <div class="flex-17 btn btn-oper btn-on">
+                        <div>ON</div>
+                        <hr>
+                         <div>C&middot;CE</div>
+                    </div>
+                    <div class="flex-17 btn btn-oper">
+                        AC
+                    </div>
+                    <div class="flex-17 btn btn-oper">
+                        MRC
+                    </div>
+                    <div class="flex-17 btn btn-oper">
+                        M-
+                    </div>
+                    <div class="flex-17 btn btn-oper">
+                        M+
+                    </div>
+                    <!-- Row-3 -->
+                    <div class="flex-17 btn btn-num">
+                        7
+                    </div>
+                    <div class="flex-17 btn btn-num">
+                        8
+                    </div>
+                    <div class="flex-17 btn btn-num">
+                        9
+                    </div>
+                    <div class="flex-17 btn btn-oper">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <div class="flex-17 btn btn-oper">
+                        <i class="fas fa-square-root-alt"></i>
+                    </div>
+                    <!-- Row-4 -->
+                    <div class="flex-17 btn btn-num">
+                        4
+                    </div>
+                    <div class="flex-17 btn btn-num five-btn">
+                        <div class="circle">
+                            5
+                        </div>                       
+                    </div>
+                    <div class="flex-17 btn btn-num">
+                        6
+                    </div>
+                    <div class="flex-17 btn btn-oper">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <div class="flex-17 btn btn-oper">
+                        <i class="fas fa-divide"></i>
+                    </div>
+                    <!-- Row-5 & 6-->
+                    <div class="flex flex-58 wrap">
+                    <div class="flex-30 btn btn-num">
+                        1
+                    </div>
+                    <div class="flex-30 btn btn-num">
+                        2
+                    </div>
+                    <div class="flex-30 btn btn-num">
+                        3
+                    </div>
+                    <div class="flex-30 btn btn-num">
+                        0
+                    </div>
+                    <div class="flex-30 btn btn-num">
+                        00
+                    </div>
+                    <div class="flex-30 btn btn-num vertical-middle dot-div flex">
+                       <div class="big-dot"></div>
+                    </div>
+                </div>                
+                    <div class="flex flex-18">
+                        <div class="flex-100 btn btn-oper">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>                
+                   
+                <div class="flex flex-18 wrap">
+                    <div class="flex-100 btn btn-oper">
+                        <i class="fas fa-minus"></i>
+                    </div>
+                    <div class="flex-100 btn btn-oper">
+                        <i class="fas fa-equals"></i>
+                    </div>
+                </div>
+
                 </div>
             </div>
         </div>
-    </div>
-</div>
-        </div>
-    </div>
     </main>
-    <footer>
-        <small>&copy; Calculator</small>
+    <div class="img-calci">    
+    <input type="checkbox" name="" id="toggle">
+    <img class="calci" src="assets/media/calci.jpg" href="Calculator">
+    <label for="toggle">
+     <div class="click-for-img"> Click here for Actual image</div>   
+    </div>
+    </label>
+    <footer class="container padding">
+        <small>&copy; Calculator@2020</small>
     </footer>
-    
 </body>
+
 </html>
